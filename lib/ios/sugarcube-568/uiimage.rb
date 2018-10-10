@@ -2,7 +2,7 @@ class UIImage
   class << self
     def sugarcube568_imageNamed(name)
       main_screen = UIScreen.mainScreen
-      taller_image_ext = "-#{main_screen.bounds.size.height.to_i}@#{main_screen.scale.to_i}x"
+      taller_image_ext = "-#{main_screen.bounds.size.height.to_i}h@#{main_screen.scale.to_i}x"
 
       if (taller_image_ext && name.length > 0 && name.rangeOfString(taller_image_ext).location == NSNotFound)
         # Check if is there a path extension or not
